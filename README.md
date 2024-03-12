@@ -30,15 +30,16 @@ Pharmor is...
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Compiling Pharmor
 
-Install the required mo
+## Install required libraries
+
 * npm
   ```sh
   npm install npm@latest -g
   ```
 
-### Installation
+## Installation
 
 1. Clone the repo
    ```sh
