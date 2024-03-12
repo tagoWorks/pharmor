@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/t-a-g-o/pharmor">
-    <img src="logo.png" alt="Logo" width="160" height="160">
+    <img src="logo.png" alt="Logo" width="300" height="300">
   </a>
 
 <h3 align="center">Pharmor</h3>
@@ -21,7 +21,7 @@
 
 ## What is Pharmor?
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![/logo.png]](https://example.com)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
