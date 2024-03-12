@@ -21,7 +21,7 @@
 
 ## What is Pharmor?
 
-// ![Pharmor](https://github.com/t-a-g-o/pharmor/blob/bc2016af10b1abbee419faa834239d963f0ff040/logo.png)
+ ![Pharmor](https://github.com/t-a-g-o/pharmor//showcase.png)
 
 Pharmor is...
 
