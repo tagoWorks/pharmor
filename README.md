@@ -18,7 +18,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Issues][issues-shield]][[issues-url](https://github.com/t-a-g-o/pharmor/issues)]
+[![Issues][issues-shield]][[issues-url][https://github.com/t-a-g-o/pharmor/issues]
 [![MIT License][license-shield]][license-url]
 
 
