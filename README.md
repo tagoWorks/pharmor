@@ -4,10 +4,10 @@
     <img src="logo.png" alt="Logo" width="160" height="160">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Pharmor</h3>
 
   <p align="center">
-    project_description
+    Easy to use tool that crops videos, adds TTS, and overlays images for you.
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
