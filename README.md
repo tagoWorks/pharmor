@@ -7,10 +7,10 @@
 <h3 align="center">Pharmor</h3>
 
   <p align="center">
-    Easy to use tool that crops videos, adds TTS, and overlays images for you.
+    I'm working on it...
     <br />
     <br />
-    <a href="https://github.com/t-a-g-o/pharmor/">Download</a>
+    <a href="https://github.com/t-a-g-o/pharmor/releases">Download</a>
     ·
     <a href="https://github.com/t-a-g-o/pharmor/issues">Report Bug</a>
     ·
@@ -21,9 +21,9 @@
 
 ## What is Pharmor?
 
-![Pharmor](https://github.com/t-a-g-o/pharmor/logo.png)
+![Pharmor](https://github.com/t-a-g-o/pharmor/blob/bc2016af10b1abbee419faa834239d963f0ff040/logo.png)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Pharmor is...
 
 ## Using Pharmor
 
