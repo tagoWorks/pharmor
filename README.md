@@ -23,6 +23,10 @@ Pharmor is a tool that I (tago) developed to try and automate the process of mak
 presented, yeah this will basically automate all of that from the image overlaying, cutting the video down, and text to speech!
 This is just releasing so I do plan on heavily working to improve on it and make it the best I can, and also see if it's possible to make money with the Creator Funds
 
+Pharmor right now does not work as well as I plan for it to. I just want this code out there to see if there are any contributers willing to check out the project and put it tweak it to their own liking.
+If you want to work with me in this project or future projects please contact me at santiagobuisnessmail@gmail.com
+
+
 ## Getting started with Pharmor
 This is the quickest way to get setup with Pharmor
 ### Downloading Pharmor
