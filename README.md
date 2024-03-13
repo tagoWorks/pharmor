@@ -1,16 +1,18 @@
-<b />
+<br />
 <div align="center">
   <a href="https://github.com/t-a-g-o/pharmor">
     <img src="logo.png" alt="Logo" width="245" height="245">
   </a>
+
 <h3 align="center">Pharmor</h3>
+
   <p align="center">
     An easy to use short video creator to farm TikTok stories.
     <br />
     <br />
     <a href="https://github.com/t-a-g-o/pharmor/releases">Download</a>
     -
-    <a href="https://tago.works/">tagoWorks</a>
+    <a href="https://github.com/t-a-g-o/pharmor/issues">Report Bug</a>
     -
     <a href="https://tago.works/discord">Join Discord</a>
   </p>
