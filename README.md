@@ -6,8 +6,8 @@
 <h3 align="center">Pharmor</h3>
   <p align="center">
     An easy to use short video creator to farm TikTok stories.
-    <br/>
-    <br/>
+    <br />
+    <br />
     <a href="https://github.com/t-a-g-o/pharmor/releases">Download</a>
     -
     <a href="https://tago.works/">tagoWorks</a>
