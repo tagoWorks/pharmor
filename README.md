@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/t-a-g-o/pharmor">
-    <img src="logo.png" alt="Logo" width="245" height="245">
+    <img src="https://github.com/t-a-g-o/pharmor/blob/88d7ab042619396f56bcee1be1aee743f3d0e719/logo.png" alt="Logo" width="245" height="245">
   </a>
 <h3 align="center">Pharmor</h3>
   <p align="center">
@@ -17,7 +17,7 @@
 </div>
 <h2 align="center">What is Pharmor?</h2>
 
- ![Pharmor](https://github.com/t-a-g-o/pharmor/blob/ba93865ed3764a81b0bbfb1bb32de45c4303acda/showcase.png)
+ ![Pharmor](https://github.com/t-a-g-o/pharmor/blob/88d7ab042619396f56bcee1be1aee743f3d0e719/showcase.png)
 
 Pharmor is a tool that I (tago) developed to try and automate the process of making TikTok story videos as much as I can. You know the videos with Minecraft parkour and a random reddit story being
 presented, yeah this will basically automate all of that from the image overlaying, cutting the video down, and text to speech!
@@ -76,7 +76,7 @@ If you want to check out my project Spotium, look below!
 
 <h2 align="center">Spotium for Spotify</h2>
 
-![Spotium for Spotify](https://github.com/t-a-g-o/pharmor/blob/3854279a7f8563ac7cb0ea11c5c3bb589320ff9b/spotium.png)
+![Spotium for Spotify](https://github.com/t-a-g-o/pharmor/blob/88d7ab042619396f56bcee1be1aee743f3d0e719/spotium.png)
 
 
 Start enjoying your music. With Spotium you get a straightforward appealing way to enjoy your music without ads. In about one second your listening experience will be smoother and more enjoyable.
