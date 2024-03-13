@@ -42,3 +42,9 @@ If you want to work with me in this project or future projects please contact me
    ```sh
    pip install -r requirements.txt
    ```
+### Using Pharmor to make a Video
+1. Copy the link of the YouTube video you want to use as a background for the story video. Usually vidoes like Minecraft parkour or slime making.
+2. If the YouTube is over 65 seconds (by default) it will be cut down. To change this edit the "lengthlimit" variable in Pharmor.py
+3. Put the images of the story sectioned off, in the order you want them shown ascending from 1
+4. Pharmor will automatically extact the text, and only show the image for however long the TTS is.
+5. Wait for your video to be done. The output result will be "000-FINAL.mp4" where 0000 is a random string
