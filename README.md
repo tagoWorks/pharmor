@@ -3,21 +3,18 @@
   <a href="https://github.com/t-a-g-o/pharmor">
     <img src="logo.png" alt="Logo" width="245" height="245">
   </a>
-
 <h3 align="center">Pharmor</h3>
-
   <p align="center">
     An easy to use short video creator to farm TikTok stories.
     <br />
     <br />
     <a href="https://github.com/t-a-g-o/pharmor/releases">Download</a>
     -
-    <a href="https://github.com/t-a-g-o/pharmor/issues">Report Bug</a>
+    <a href="https://tago.works">tagoWorks Site</a>
     -
-    <a href="https://tago.works/discord">Join Discord</a>
+    <a href="https://tago.works/discord">Discord</a>
   </p>
 </div>
-
 <h2 align="center">What is Pharmor?</h2>
 
  ![Pharmor](https://github.com/t-a-g-o/pharmor/blob/ba93865ed3764a81b0bbfb1bb32de45c4303acda/showcase.png)
