@@ -77,6 +77,7 @@ If you want to check out my project Spotium, look below!
 <h2 align="center">Spotium for Spotify</h2>
 
 ![Spotium for Spotify](https://github.com/t-a-g-o/pharmor/blob/3854279a7f8563ac7cb0ea11c5c3bb589320ff9b/spotium.png)
-Start enjoying your music. With Spotium you get a straightforward appealing way to enjoy your music without ads. In about one second your listening experience will be smoother and more enjoyable.
+
+\nStart enjoying your music. With Spotium you get a straightforward appealing way to enjoy your music without ads. In about one second your listening experience will be smoother and more enjoyable.
 For VirusTotal links, and download links visit https://spotium.dev/!
 
