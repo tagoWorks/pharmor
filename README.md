@@ -21,14 +21,12 @@
 
 Pharmor is a tool that I (tago) developed to try and automate the process of making TikTok story videos as much as I can. You know the videos with Minecraft parkour and a random reddit story being
 presented, yeah this will basically automate all of that from the image overlaying, cutting the video down, and text to speech!
-This is just releasing so I do plan on heavily working to improve on it and make it the best I can, and also see if it's possible to make money with the Creator Funds
+This is just releasing so I do plan on heavily working to improve on it and make it the best I can, and also see if it's possible to make money with the Creator Funds.
 
 Pharmor right now does not work as well as I plan for it to. I just want this code out there to see if there are any contributers willing to check out the project and put it tweak it to their own liking.
 If you want to work with me in this project or future projects please contact me at santiagobuisnessmail@gmail.com
 
-
 ## Getting started with Pharmor
-
 
 ### Download Pharmor
 1. Clone the repo
@@ -44,3 +42,4 @@ If you want to work with me in this project or future projects please contact me
    ```sh
    pip install -r requirements.txt
    ```
+###Check out my other project!
