@@ -1,6 +1,0 @@
-colorama==0.4.6
-gTTS==2.5.1
-moviepy==1.0.3
-Pillow==10.2.0
-pytesseract==0.3.10
-pytube==15.0.0
