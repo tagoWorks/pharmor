@@ -26,7 +26,7 @@ This is just releasing so I do plan on heavily working to improve on it and make
 ## Getting started with Pharmor
 This is the quickest way to get setup with Pharmor
 ### Downloading Pharmor
-1. 1Download the latest Pharmor compile from the releases tab and run the file.
+1. Download the latest Pharmor compile from the releases tab and run the file.
 2. Download Tesseract OCR
    * To use Pharmor's image text to speech you need a Optical Character Recognition software. Download Tesseract OCR from https://github.com/UB-Mannheim/tesseract/wiki
    * Make sure Tesseract is in your PATH
