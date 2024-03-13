@@ -1,2 +1,0 @@
-python Pharmor.py
-pause
