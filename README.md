@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/t-a-g-o/pharmor">
-    <img src="logo.png" alt="Logo" width="300" height="300">
+    <img src="logo.png" alt="Logo" width="245" height="245">
   </a>
 
 <h3 align="center">Pharmor</h3>
