@@ -18,7 +18,7 @@
   </p>
 </div>
 
-### What is Pharmor?
+<h2 align="center">What is Pharmor?</h2>
 
  ![Pharmor](https://github.com/t-a-g-o/pharmor/blob/ba93865ed3764a81b0bbfb1bb32de45c4303acda/showcase.png)
 
