@@ -28,31 +28,19 @@ If you want to work with me in this project or future projects please contact me
 
 
 ## Getting started with Pharmor
-This is the quickest way to get setup with Pharmor
-### Downloading Pharmor
-1. Download the latest Pharmor compile from the releases tab and run the file.
-2. Download Tesseract OCR
-   * To use Pharmor's image text to speech you need a Optical Character Recognition software. Download Tesseract OCR from https://github.com/UB-Mannheim/tesseract/wiki
-   * Make sure Tesseract is in your PATH
-   * If you're stuck and need more help check out this very helpful video by JayMartMedia https://www.youtube.com/watch?v=2kWvk4C1pMo
-### Using Pharmor
-* Provide a YouTube URL, I recommend this video to be at least 1920x1080 since Pharmor crops to the middle
-* Put all your images asending from 1 in the created "images" folder. (PNG, JPG, JPEG)
-* Press enter
 
-## Compile Pharmor yourself
 
-### Get prerequisites
+### Download Pharmor
 1. Clone the repo
    ```sh
    git clone https://github.com/t-a-g-o/pharmor
    ```
-2. Download Tesseract OCR
+### Get prerequisites
+1. Download Tesseract OCR
    * To use Pharmor's image text to speech you need a Optical Character Recognition software. Download Tesseract OCR from https://github.com/UB-Mannheim/tesseract/wiki
    * Make sure Tesseract is in your PATH
    * If you're stuck and need more help check out this very helpful video by JayMartMedia https://www.youtube.com/watch?v=2kWvk4C1pMo
-3. Download required modules
+2. Download required modules
    ```sh
    pip install -r requirements.txt
    ```
-4. Run the "run.bat" file
