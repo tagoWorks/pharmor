@@ -7,7 +7,7 @@
 <h3 align="center">Pharmor</h3>
 
   <p align="center">
-    I'm working on it...
+    An easy to use short video creator to farm TikTok stories.
     <br />
     <br />
     <a href="https://github.com/t-a-g-o/pharmor/releases">Download</a>
@@ -18,21 +18,27 @@
   </p>
 </div>
 
-
-## What is Pharmor?
+### What is Pharmor?
 
  ![Pharmor](https://github.com/t-a-g-o/pharmor//showcase.png)
 
-Pharmor is...
+Pharmor is a tool that I (tago) developed to try and automate the process of making TikTok story videos as much as I can. You know the videos with Minecraft parkour and a random reddit story being
+presented, yeah this will basically automate all of that from the image overlaying, cutting the video down, and text to speech!
+This is just releasing so I do plan on heavily working to improve on it and make it the best I can, and also see if it's possible to make money with the Creator Funds
 
-## Using Pharmor
+## How to make a video using Pharmor
+This is the quickest way to get setup with Pharmor
+### Downloading Pharmor
+Download the latest Pharmor compile from the releases tab and run the file.
+This should automatically download any required libraries automatically for you.
+### Using Pharmor
+* Provide a YouTube URL, I recommend this video to be at least 1920x1080 since Pharmor crops to the middle
+* Put all your images asending from 1 in the created "images" folder. (PNG, JPG, JPEG)
+* Press enter
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
-### Compiling Pharmor
 
-## Install required libraries
+## Compile Pharmor
 
 * npm
   ```sh
