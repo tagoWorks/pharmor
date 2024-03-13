@@ -42,4 +42,3 @@ If you want to work with me in this project or future projects please contact me
    ```sh
    pip install -r requirements.txt
    ```
-###Check out my other project!
