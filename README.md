@@ -51,8 +51,10 @@ This should automatically download any required libraries automatically for you.
    ```sh
    pip install -r requirements.txt
    ```
-4. Run Pharmor.puy
-
+4. Run the python file
+   ```sh
+   python Pharmor.py
+   ```
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
