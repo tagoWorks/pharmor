@@ -26,7 +26,7 @@ Pharmor is a tool that I (tago) developed to try and automate the process of mak
 presented, yeah this will basically automate all of that from the image overlaying, cutting the video down, and text to speech!
 This is just releasing so I do plan on heavily working to improve on it and make it the best I can, and also see if it's possible to make money with the Creator Funds
 
-## How to make a video using Pharmor
+## Getting started with Pharmor
 This is the quickest way to get setup with Pharmor
 ### Downloading Pharmor
 Download the latest Pharmor compile from the releases tab and run the file.
@@ -36,45 +36,24 @@ This should automatically download any required libraries automatically for you.
 * Put all your images asending from 1 in the created "images" folder. (PNG, JPG, JPEG)
 * Press enter
 
+## Compile Pharmor yourself
 
-
-## Compile Pharmor
-
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-## Installation
-
+### Get prerequisites
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/t-a-g-o/pharmor
    ```
-2. Install NPM packages
+2. Download Tesseract OCR
+   * To use Pharmor's image text to speech you need a Optical Character Recognition software. Download Tesseract OCR from https://github.com/UB-Mannheim/tesseract/wiki
+   * Make sure Tesseract is in your PATH
+   * If you're stuck and need more help check out this very helpful video by JayMartMedia https://www.youtube.com/watch?v=2kWvk4C1pMo
+3. Download required modules
    ```sh
-   npm install
+   pip install -r requirements.txt
    ```
-   
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-
-See the [open issues](https://github.com/t-a-g-o/pharmor/issues) for a full list of proposed features (and known issues).
-
+4. Run Pharmor.puy
 
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-## Acknowledgments
-
-* []()
-* []()
-* []()
