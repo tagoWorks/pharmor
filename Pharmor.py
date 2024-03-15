@@ -74,60 +74,9 @@ if platform.system() == 'Darwin':
         cropped_clip.write_videofile(randomid + '.mp4')
         clip.close()
         os.remove(oldid + '.mp4')
-        numimages = len(imagefiles)
-        imagesdone = 0
-        for image_file in os.listdir('images'):
-            title()
-            try:
-                printcenter('Extracting text from images...' + ' | ' + str(imagesdone) + ' / ' + str(numimages))
-                time.sleep(1)
-                if image_file.lower().endswith(('.png', '.jpg', '.jpeg', '.gif')):
-                    image_path = os.path.join('images', image_file)
-                    img = Image.open(image_path)
-                    extracted_text = pytesseract.image_to_string(img)
-                    title()
-                    printcenter('Converting text to audio...' + ' | ' + str(imagesdone) + ' / ' + str(numimages))
-                    try:
-                        tts = gTTS(text=extracted_text, lang='en')
-                        audio_filename = os.path.splitext(image_file)[0] + '.mp3'
-                        tts.save('images/' + audio_filename)
-                        imagesdone += 1
-                    except Exception as e:
-                        title()
-                        printcenter('Error converting text to audio\n\n')
-                        print(e)
-                        time.sleep(2)
-                        exit()
-            except Exception as e:
-                title()
-                printcenter('Error extracting text from image')
-                time.sleep(2)
-                exit()
-        title()
-        printcenter('Overlaying images...')
-        image_files = [file for file in os.listdir('images') if file.lower().endswith(('.jpg', '.jpeg', '.png'))]
-        mp3_files = [file for file in os.listdir('images') if file.lower().endswith('.mp3')]
-        time_position = 0
-        master_video = VideoFileClip(randomid + '.mp4')
-        for image_file, audio_file in zip(image_files, mp3_files):
-            image = ImageClip(os.path.join('images', image_file))
-            audio = AudioFileClip(os.path.join('images', audio_file))
-            audio_duration = audio.duration
-            image_with_audio = image.set_duration(audio_duration).set_audio(audio)
-            video_width, video_height = master_video.size
-            image_width, image_height = image_with_audio.size
-            scale_factor = min(video_width / image_width, video_height / image_height)
-            image_with_audio = image_with_audio.resize(width=image_width * scale_factor, height=image_height * scale_factor)
-            x_center = (video_width - image_with_audio.w) / 2
-            y_center = (video_height - image_with_audio.h) / 2
-            image_with_audio = image_with_audio.set_position((x_center, y_center))
-            master_video = CompositeVideoClip([master_video, image_with_audio.set_start(time_position)])
-            time_position += audio_duration
-        master_video.write_videofile(randomid + '-FINAL.mp4', codec='libx264', audio_codec='aac')
-        oldid = randomid
-        randomid = str(random.randint(1111, 9999))
-        clip.close()
-        os.remove(oldid + '.mp4')
+
+        # fix the code
+
         title()
         printcenter('Done!')
         time.sleep(2)
@@ -164,35 +113,40 @@ if platform.system() == 'Darwin':
 elif platform.system() == 'Windows':
     import colorama, shutil
     from colorama import Fore, Back
+    from PIL import Image, ImageDraw, ImageFont
+
     colorama.init()
     clear = lambda: os.system('cls')
     def printcenter(s):
         print(s.center(shutil.get_terminal_size().columns))
     with open(('header.txt'), 'r') as f:
         header = f.read()
+    def title():
+        clear()
+        printcenter(Fore.LIGHTYELLOW_EX + header + "\n\n\n\n")
     def begin():
         global videoinput
         global randomid
+        global filechosen
+        global titlechosen
+        global storychosen
         imagefiles = []
-        for f in os.listdir('images'):
+        for f in os.listdir('frames'):
             if f.lower().endswith(('.png', '.jpg', '.jpeg')):
                 imagefiles.append(f)
         if len(imagefiles) == 0:
-            clear()
-            printcenter(Fore.LIGHTYELLOW_EX + header + "\n\n\n\n")
+            title()
             printcenter(Fore.WHITE + 'Folder is empty or does not contain enough image files!')
             time.sleep(2)
             exit()
-        clear()
-        printcenter(Fore.LIGHTYELLOW_EX + header + "\n\n\n\n")
+        title()
         printcenter(Fore.WHITE + 'Downloading youtube video: ' + videoinput)
         yt = YouTube(videoinput)
         video_stream = yt.streams.get_highest_resolution()
         video_stream.download((''), filename=randomid + '.mp4')
         lengthlimit = 65
         if yt.length > lengthlimit:
-            clear()
-            printcenter(Fore.LIGHTYELLOW_EX + header + "\n\n\n\n")
+            title()
             printcenter(Fore.WHITE + f'Video is longer than {str(lengthlimit)} seconds! Cutting it...')
             clip = mpy.VideoFileClip(randomid + '.mp4').subclip(0, 65)            
             oldid = randomid
@@ -204,8 +158,7 @@ elif platform.system() == 'Windows':
         else:
             clip = mpy.VideoFileClip(randomid + '.mp4')
         time.sleep(1)
-        clear()
-        printcenter(Fore.LIGHTYELLOW_EX + header + "\n\n\n\n")
+        title()
         printcenter(Fore.WHITE + 'Cropping video for mobile devices...')
         clip = mpy.VideoFileClip(randomid + '.mp4')
         (w, h) = clip.size
@@ -219,90 +172,72 @@ elif platform.system() == 'Windows':
         cropped_clip.write_videofile(randomid + '.mp4')
         clip.close()
         os.remove(oldid + '.mp4')
-        numimages = len(imagefiles)
-        imagesdone = 0
-        for image_file in os.listdir('images'):
-            clear()
-            printcenter(Fore.LIGHTYELLOW_EX + header + "\n\n\n\n")
-            try:
-                printcenter(Fore.WHITE + 'Extracting text from images...' + ' | ' + str(imagesdone) + ' / ' + str(numimages))
-                time.sleep(1)
-                if image_file.lower().endswith(('.png', '.jpg', '.jpeg', '.gif')):
-                    image_path = os.path.join('images', image_file)
-                    img = Image.open(image_path)
-                    extracted_text = pytesseract.image_to_string(img)
-                    clear()
-                    printcenter(Fore.LIGHTYELLOW_EX + header + "\n\n\n\n")
-                    printcenter(Fore.WHITE + 'Converting text to audio...' + ' | ' + str(imagesdone) + ' / ' + str(numimages))
-                    try:
-                        tts = gTTS(text=extracted_text, lang='en')
-                        audio_filename = os.path.splitext(image_file)[0] + '.mp3'
-                        tts.save('images/' + audio_filename)
-                        imagesdone += 1
-                    except Exception as e:
-                        clear()
-                        printcenter(Fore.LIGHTYELLOW_EX + header + "\n\n\n\n")
-                        printcenter(Fore.WHITE + 'Error converting text to audio')
-                        print(Back.RED + '    ' * 30 + Back.RESET + '\n')
-                        print(e)
-                        time.sleep(2)
-                        exit()
-            except Exception as e:
-                clear()
-                printcenter(Fore.LIGHTYELLOW_EX + header + "\n\n\n\n")
-                printcenter(Fore.WHITE + 'Error extracting text from image')
-                time.sleep(2)
-                exit()
-        clear()
-        printcenter(Fore.LIGHTYELLOW_EX + header + "\n\n\n\n")
-        printcenter(Fore.WHITE + 'Overlaying images...')
-        image_files = [file for file in os.listdir('images') if file.lower().endswith(('.jpg', '.jpeg', '.png'))]
-        mp3_files = [file for file in os.listdir('images') if file.lower().endswith('.mp3')]
-        time_position = 0
-        master_video = VideoFileClip(randomid + '.mp4')
-        for image_file, audio_file in zip(image_files, mp3_files):
-            image = ImageClip(os.path.join('images', image_file))
-            audio = AudioFileClip(os.path.join('images', audio_file))
-            audio_duration = audio.duration
-            image_with_audio = image.set_duration(audio_duration).set_audio(audio)
-            video_width, video_height = master_video.size
-            image_width, image_height = image_with_audio.size
-            scale_factor = min(video_width / image_width, video_height / image_height)
-            image_with_audio = image_with_audio.resize(width=image_width * scale_factor, height=image_height * scale_factor)
-            x_center = (video_width - image_with_audio.w) / 2
-            y_center = (video_height - image_with_audio.h) / 2
-            image_with_audio = image_with_audio.set_position((x_center, y_center))
-            master_video = CompositeVideoClip([master_video, image_with_audio.set_start(time_position)])
-            time_position += audio_duration
-        master_video.write_videofile(randomid + '-FINAL.mp4', codec='libx264', audio_codec='aac')
-        oldid = randomid
-        randomid = str(random.randint(1111, 9999))
-        clip.close()
-        os.remove(oldid + '.mp4')
-        clear()
-        printcenter(Fore.LIGHTYELLOW_EX + header + "\n\n\n\n")
+        image = Image.open('frames/' + filechosen)
+        draw = ImageDraw.Draw(image)
+        font_path = "arial.ttf"
+        font_size = 36
+        font = ImageFont.load_default()
+        text_width, text_height = draw.textsize(titlechosen, font)
+        image_width, image_height = image.size
+        text_x = (image_width - text_width) // 2
+        text_y = (image_height - text_height) // 2
+        draw.text((text_x, text_y), titlechosen, font=font, fill="white")
+        name, extension = os.path.splitext('frames/' + filechosen)
+        saveas = f"{str(random.randint(1111, 9999))}_with_text{extension}" 
+        image.save(saveas)
+        title()
         printcenter(Fore.WHITE + 'Done!')
         time.sleep(2)
         exit()
     def downloadfunc():
         global videoinput
-        clear()
-        printcenter(Fore.LIGHTYELLOW_EX + header + "\n\n\n\n")
-        printcenter(Fore.WHITE + 'Enter YouTube video URL (rec 1920x1080):')
-        videoinput = input("")
+        title()
+        videoinput = input(Fore.WHITE + 'Enter YouTube video URL (rec 1920x1080): ')
         if "https://www.youtube.com/watch?v=" in videoinput: 
-            if not os.path.exists('images'):
-                os.mkdir('images')
-                clear()
-                printcenter(Fore.LIGHTYELLOW_EX + header + "\n\n\n\n")
-                printcenter(Fore.WHITE + 'Please put your image files in the "images" folder.\nFor more information visit https://github.com/t-a-go/Pharmor')
-                time.sleep(2)
-            else:
-                begin()
+                chooseheader()
         else:
-            clear()
-            printcenter(Fore.LIGHTYELLOW_EX + header + "\n\n\n\n")
-            printcenter(Fore.WHITE + 'Invalid URL, please try again')
-            time.sleep(2)
-            downloadfunc()
+            if "test" in videoinput:
+                chooseheader()
+            else:
+                title()
+                printcenter(Fore.WHITE + 'Invalid URL, please try again')
+                time.sleep(2)
+                downloadfunc()
+    def chooseheader():
+        title()
+        global filechosen
+        files = os.listdir('frames')
+        for i, file in enumerate(files):
+            print(Fore.YELLOW + f"[{i+1}] {file}")
+        while True:
+            choice = input(Fore.WHITE + "\nWhich frame header are you using (Enter the corresponding number): ")
+            try:
+                choice = int(choice)
+                if 1 <= choice <= len(files):
+                    filechosen = files[choice - 1]
+                    print('You choose the file ' + filechosen)
+                    time.sleep(1)
+                    inputtitletext()
+                else:
+                    title()
+                    printcenter(Fore.WHITE + "Invalid choice. Please enter a number within the range.")
+                    time.sleep(2)
+                    chooseheader()
+            except ValueError:
+                title()
+                printcenter(Fore.WHITE + "Invalid input. Please enter a number.")
+                time.sleep(2)
+                chooseheader()
+    def inputtitletext():
+        title()
+        global titlechosen
+        titlechosen = input(Fore.WHITE + "\nWhat is the story title?: ")
+        inputstorytext()
+    
+    def inputstorytext():
+        title()
+        global storychosen
+        storychosen = input(Fore.WHITE + "\nPaste or type the contents of the story:\n")
+        begin()
+
     downloadfunc()
