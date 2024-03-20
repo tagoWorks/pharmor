@@ -7,7 +7,7 @@
   <p align="center">
     An easy to use short video creator to farm TikTok stories.
     <br />
-    *there is definitely an easier way to make a tiktok farmer but idc*
+    _there is definitely an easier way to make a tiktok farmer but idc_
     <br />
     <a href="https://tago.works">tagoWorks Site</a>
     -
