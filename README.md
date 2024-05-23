@@ -16,7 +16,8 @@
 <h2 align="center">What is Pharmor?</h2>
 
  ![Pharmor](https://github.com/t-a-g-o/pharmor/blob/88d7ab042619396f56bcee1be1aee743f3d0e719/showcase.png)
-**Pharmor is not being worked on as of now.**
+
+![Development](https://img.shields.io/badge/PLANNED%20DEVELOPMENT-FFD700)
 
 Pharmor is a tool that I (tago) developed to try and automate the process of making TikTok story videos as much as I can. You know the videos with Minecraft parkour and a random reddit story being
 presented, yeah this will basically automate all of that from the image overlaying, cutting the video down, and text to speech!
